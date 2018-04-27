@@ -1,16 +1,18 @@
-# encoding : UTF-8
 
 require 'sinatra'
+require './block'
+aaa = Dog.new
 
-get '/join' do
-<<<<<<< HEAD
+
+get '/' do
 	
-"회원가입 페이지 입니다."
+ "dog" + aaa.my_weight
   
-=======
-	"회원가입 페이지 입니다."
-
-   "block!!"
->>>>>>> 7440656731e772a32e890fa552804ed756d928d2
-
   end
+
+get'/eat' do
+ aaa.eat
+ '먹었음'
+
+
+end
